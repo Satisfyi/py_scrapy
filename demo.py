@@ -1,12 +1,38 @@
 import requests
-import os.path
+# import os.path
 from bs4 import BeautifulSoup
 import time
 import random
-from openpyxl import Workbook
-wb=Workbook()
-ws=wb.active
-ws.append(['排名','电影名称','导演','年份','国家','评分','经典台词'])
+# from openpyxl import Workbook
+import pymysql
+conn = pymysql.connect(
+    host='127.0.0.1',
+    port=3306,
+    user='root',
+    password='123456',
+    database='douban',
+    charset='utf8mb4',
+)
+cursor = conn.cursor()
+cursor.execute("""
+               create table if not exists movies
+            (       id int primary key auto_increment,
+                    `rank` int,
+                    title varchar(255),
+                    director varchar(255),
+                    year int,
+                    country varchar(255),
+                    score float,
+                    quote varchar(255)
+                   )
+                   
+        """)
+cursor.execute("""delete from movies""")
+cursor.execute("""alter table movies auto_increment = 1""")
+conn.commit()
+# wb=Workbook()
+# ws=wb.active
+# ws.append(['排名','电影名称','导演','年份','国家','评分','经典台词'])
 #请求数据
 headers={
     "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36 Edg/149.0.0.0",
@@ -39,24 +65,31 @@ while page<250:
     for item in items:
         try:
             rank=k
-            name=item.find('span',class_='title').get_text()
+            title=item.find('span',class_='title').get_text()
             bd_div=item.find('div',class_='bd')
             director=bd_div.find('p').get_text().strip().split(" ")[1]
             year=bd_div.find('p').get_text().strip().split("\n")[1].strip().split("/")[0].strip()
             country=bd_div.find('p').get_text().strip().split('\n')[1].strip().split('/')[1].strip()
             score=item.find('span',class_='rating_num').get_text()
             quote=item.find('p',class_='quote').get_text().strip()if item.find('p',class_='quote') else ''
-            dic={'排名':rank,'电影名称：':name,'导演':director,'年份':year,'国家':country,'评分':score,'经典台词':quote}
-            k+=1
+            dic={'排名':rank,'电影名称：':title,'导演':director,'年份':year,'国家':country,'评分':score,'经典台词':quote}
             print(dic)
+            cursor.execute("""insert into movies (`rank`,title,director,year,country,score,quote) values
+                (%s,%s,%s,%s,%s,%s,%s)""",(rank,title,director,year,country,score,quote)
+        )
             #设置间隔
             time.sleep(random.randint(1,3))
-            ws.append([rank,name,director,year,country,score,quote])
+            k+=1
+            # ws.append([rank,name,director,year,country,score,quote])
         except Exception as e:
             print(f'第{k}条数据爬取失败,错误信息:{e}')
             k+=1
             continue
     print(f'第{i}页数据爬取完成')
-    print(f'数据已保存到{os.path.abspath("豆瓣电影TOP250.xlsx")}')
+    # print(f'数据已保存到{os.path.abspath("豆瓣电影TOP250.xlsx")}')
     i+=1
-wb.save('豆瓣电影TOP250.xlsx')
+# wb.save('豆瓣电影TOP250.xlsx')
+conn.commit()
+cursor.close()
+conn.close()
+print(f'数据已保存到数据库')
