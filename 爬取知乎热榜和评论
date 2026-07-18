@@ -48,7 +48,7 @@ def parse_static_data():
     for index, item in enumerate(items):
         title = item.find('h2').get_text()
         main_content = item.find('p', class_='HotItem-excerpt').get_text()if item.find('p', class_='HotItem-excerpt')else ''
-        hot = item.find('div', class_="HotItem-metrics HotItem-metrics--bottom").get_text().split('分')[0]if item.find('div', class_="HotItem-metrics HotItem-metrics--bottom")else ''
+        hot = item.find('div', class_="HotItem-metrics HotItem-metrics--bottom").get_text().split('分')[0].replace('\u200b','').strip()if item.find('div', class_="HotItem-metrics HotItem-metrics--bottom")else ''
         # print(f"排名{index+1}. {title}")
         id = item.find('a').attrs['href'].split('/')[-1].split('?')[0]
         hot_list.append({"排名":index+1,"标题":title,"内容":main_content,'热度':hot,"id":id})
@@ -60,25 +60,24 @@ def parse_static_data():
 def parse_answer_data(tab,item):
     id=item['id']
     results=[]
-    tab.listen.start(f'api/v4/questions/')
+    tab.listen.start(f'api/v4/questions/{id}/feeds')
     sleep_time()
     tab.get(f'https://www.zhihu.com/question/{id}')
-    for page in range(3):
-        tab.scroll.to_bottom()
+    tab.scroll.to_bottom()
+    sleep_time()
 
-        r = tab.listen.wait(timeout=10)
+    for _ in range(5):
+        r = tab.listen.wait(timeout=5)
 
         if not r:
-            print(f"第{page+1}次滚动超时，跳过")
-            continue
+            break
 
         json_data = r.response.body
 
-        # if not isinstance(json_data, dict) or 'data' not in json_data:
-        #     print(f"第{page+1}次响应格式异常，keys={json_data.keys() if isinstance(json_data, dict) else type(json_data)}")
-        #     continue
+        if not isinstance(json_data, dict) or 'data' not in json_data:
+            continue
 
-        data_list = json_data['data']
+        data_list = json_data["data"]
 
         for data in data_list:
             name = data['target']['author']['name']if data['target']['author']else ''
@@ -111,7 +110,7 @@ def main():
     for item in hot_list:
         dics=parse_answer_data(tab,item)
         for dic in dics:
-            save_to_excel(item)
+            save_to_excel(dic)
     wb.save('知乎热榜.xlsx')
 
 if __name__ == '__main__':
