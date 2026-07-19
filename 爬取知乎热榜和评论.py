@@ -5,8 +5,34 @@ import time
 import random
 from bs4 import BeautifulSoup
 import datetime
-from openpyxl import Workbook
+# from openpyxl import Workbook
+import pymysql
 
+conn=pymysql.connect(
+    host='localhost',
+    port=3306,
+    user='root',
+    password='123456',
+    database='zhihu',
+    charset='utf8mb4',
+)
+cursor=conn.cursor()
+cursor.execute("""
+               create table if not exists zhihu_hot_list
+               (
+                   id       int primary key auto_increment,
+                   `rank`   int,
+                   title    varchar(255),
+                   main_content text,
+                   hot     varchar(255),
+                   name  varchar(255),
+                   content text   ,
+                   approve_save_comment  varchar(255),
+                   time datetime
+               )
+
+               """)
+print("数据库连接成功，表创建成功")
 headers={'User-Agent':"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36",
          "cookie":"_xsrf=h6ctM5n2j8lPyimLVQGjcAoa7xVjIjDK; __zse_ck=005_NjzjjvjS8Ag3XvEKz0bJZJWK0BIrjV0vuXAwuqL5f6TrvGF1oV1rIDb5p05v/Az8qIkJhdmDKMD1ZfKIGZ1nse8d530XcMiy9oy0pQQKaoZtvVQbmz6zEb5al94XVXCF-ePqeEvnwiA07bzyQr6meIZ1yypwvY+DIvyoXA+Y3kxMhKpJOQUPotb96dOxMHVHPQizk/VUBZPlQHi7QejkK57PQ2neH7AS4MOJ/NYdU4vm8oJ8MAhnMYpVZ6o0D2kV8; _zap=f36fc1fc-c94a-4717-82ca-dcec691e1b24; d_c0=n_dXhaKEmxyPTpDM7QYQRJyTVUbre-D2akc=|1784252980; Hm_lvt_98beee57fd2ef70ccdd5ca52b9740c49=1784252976; HMACCOUNT=A545A7F99E319E92; DATE=1784252977328; "
                   "crystal=U2FsdGVkX19kMwYeZ+bHV6HhQoocrcvfTG+NyI2seyy/mHPVVDS29TDcomDCsGDy3naYcFI4Pbo82xKqzM03cGA0fkjfRPohrCo2KNZszky18rhMhkEo1WH8jpDpQWGL4uJSRBWcL/Tge423iblPmmRNcxC3SlrZHKj/XxnctyPJ9YMfWQy1+dkE1vs+ilLZHyDwl0Vt2UHBuYq2J4KvCBWLny3dA0h1CMqXOA5drWizWbIsZ4ViETt9MBd69Mnw; cmci9xde=U2FsdGVkX1+g4TJ7tdTfm3JXO8Vd8I2j9zSZHY67rzcOHg5GHtsaGgZFt6M+rcZzcVU3FOYixkU8dKvqN448/g==; pmck9xge=U2FsdGVkX19We14anJViZcSd5kf+h76spZ5LvYprO0Q=; assva6=U2FsdGVkX1++7RR+O5N7I1KTgYCB0SEzsHSNc6tB310=; assva5=U2FsdGVkX1/HO+bJldQm4QnodArkAm"
@@ -38,21 +64,31 @@ def time_trans(ts):
 #解析静态页面
 def parse_static_data():
     # 拿静态页面直接用requests
-    res = requests.get(headers=headers, url=url)
-    response = res.text
+    print("开始爬取静态页面")
+    try:
+        res = requests.get(headers=headers, url=url)
+        response = res.text
+    except Exception as e:
+        print(f"请求失败: {e}")
+        return []
     # print(response.text)
     soup = BeautifulSoup(response, 'lxml')
     items = soup.find_all('section', class_="HotItem")
     hot_list=[]
     # 第一次遍历，获得静态标题，热度
     for index, item in enumerate(items):
-        title = item.find('h2').get_text()
-        main_content = item.find('p', class_='HotItem-excerpt').get_text()if item.find('p', class_='HotItem-excerpt')else ''
-        hot = item.find('div', class_="HotItem-metrics HotItem-metrics--bottom").get_text().split('分')[0].replace('\u200b','').strip()if item.find('div', class_="HotItem-metrics HotItem-metrics--bottom")else ''
-        # print(f"排名{index+1}. {title}")
-        id = item.find('a').attrs['href'].split('/')[-1].split('?')[0]
-        hot_list.append({"排名":index+1,"标题":title,"内容":main_content,'热度':hot,"id":id})
-    sleep_time()
+        try:
+            title = item.find('h2').get_text()
+            main_content = item.find('p', class_='HotItem-excerpt').get_text()if item.find('p', class_='HotItem-excerpt')else ''
+            hot = item.find('div', class_="HotItem-metrics HotItem-metrics--bottom").get_text().split('分')[0].replace('\u200b','').strip()if item.find('div', class_="HotItem-metrics HotItem-metrics--bottom")else ''
+            # print(f"排名{index+1}. {title}")
+            id = item.find('a').attrs['href'].split('/')[-1].split('?')[0]
+            hot_list.append({"排名":index+1,"标题":title,"内容":main_content,'热度':hot,"id":id})
+        except Exception as e:
+            print(f"解析静态页面出错: {e}")
+            continue
+        sleep_time()
+        print(f"静态页面解析完成，共{len(hot_list)}条数据")
     return hot_list
 
 
@@ -80,27 +116,32 @@ def parse_answer_data(tab,item):
         data_list = json_data["data"]
 
         for data in data_list:
-            name = data['target']['author']['name']if data['target']['author']else ''
-            content = html_to_text(data['target']['content'])
-            # print(content)
-            approve_save_comment = data['target']['matrix_tips']
-            time_original = data['target']['created_time']
-            time = time_trans(time_original)
-            dic = {"排名":item['排名'],"标题":item['标题'],"内容":item['内容'],'热度':item['热度'],'用户': name, "评论内容": content, "点赞-收藏-评论": approve_save_comment, '发布时间': time}
-            print(dic)
-            results.append(dic)
+            try:
+                name = data['target']['author']['name']if data['target']['author']else ''
+                content = html_to_text(data['target']['content'])
+                # print(content)
+                approve_save_comment = data['target']['matrix_tips']
+                time_original = data['target']['created_time']
+                time = time_trans(time_original)
+                dic = {"排名":item['排名'],"标题":item['标题'],"内容":item['内容'],'热度':item['热度'],'用户': name, "评论内容": content, "点赞-收藏-评论": approve_save_comment, '发布时间': time}
+                print(dic)
+                results.append(dic)
+            except Exception as e:
+                print(f"解析问答页面出错: {e}，标题为{item['标题']}")
+                continue
             sleep_time()
-
 
     return results
 
 
-wb = Workbook()
-ws = wb.active
-ws.append(['排名', '标题', '内容', '热度', '用户', '评论内容', '点赞-收藏-评论', '发布时间'])
-def save_to_excel(item):
-
-    ws.append([item['排名'],item['标题'],item['内容'],item['热度'],item['用户'],item['评论内容'],item['点赞-收藏-评论'],item['发布时间']])
+# wb = Workbook()
+# # ws = wb.active
+# ws.append(['排名', '标题', '内容', '热度', '用户', '评论内容', '点赞-收藏-评论', '发布时间'])
+def save_data(item):
+    cursor.execute("""insert into zhihu_hot_list(`rank`, title, main_content, hot, name, content, approve_save_comment, time) values(%s, %s, %s, %s, %s, %s, %s, %s)""",(item['排名'],item['标题'],item['内容'],item['热度'],item['用户'],item['评论内容'],item['点赞-收藏-评论'],item['发布时间']))
+    sleep_time()
+    conn.commit()
+    # ws.append([item['排名'],item['标题'],item['内容'],item['热度'],item['用户'],item['评论内容'],item['点赞-收藏-评论'],item['发布时间']])
 
 
 def main():
@@ -108,10 +149,18 @@ def main():
     co=ChromiumPage()
     tab=co.latest_tab
     for item in hot_list:
-        dics=parse_answer_data(tab,item)
-        for dic in dics:
-            save_to_excel(dic)
-    wb.save('知乎热榜.xlsx')
+        try:
+            dics=parse_answer_data(tab,item)
+            for dic in dics:
+                save_data(dic)
+        except Exception as e:
+            print(f"出错: {e}，标题为{item['标题']}")
+            continue
+    print("数据已保存到数据库")
+    cursor.close()
+    conn.close()
+    # wb.save('知乎热榜.xlsx')
+    # print(f'数据已保存到知乎热榜.xlsx')
 
 if __name__ == '__main__':
     main()
