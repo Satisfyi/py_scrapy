@@ -58,22 +58,28 @@ class ZhihuSpider:
         self.cursor.execute("""
             create table if not exists zhihu_hot_list
             (
-                id       int primary key auto_increment,
+                id  int primary key auto_increment,
+                content_id varchar(255),
                 `rank`   int,
                 title    varchar(255),
                 main_content text,
-                hot     varchar(255),
-                name  varchar(255),
-                content text,
-                approve_save_comment  varchar(255),
-                time datetime
+                hot     varchar(255)
             )
+        """)
+        self.cursor.execute("""
+         create table if not exists zhihu_comment(
+            id int primary key auto_increment,
+            content_id varchar(255),
+             name varchar(255),
+             content text,
+             approve_save_comment varchar(255),
+             time datetime
+         )
         """)
         logger.info("数据库连接成功，表创建成功")
 
-
     @staticmethod
-    def sleep():
+    def time_sleep():
         #模拟真实请求间隔
         time.sleep(random.randint(1, 3))
 
@@ -126,7 +132,7 @@ class ZhihuSpider:
             except Exception as e:
                 logger.warning(f"解析静态页面出错: {e}")
                 continue
-            self.sleep()
+            self.time_sleep()
 
         logger.info(f"静态页面解析完成，共{len(hot_list)}条数据")
         return hot_list
@@ -137,10 +143,10 @@ class ZhihuSpider:
         results = []
 
         self.tab.listen.start(f'api/v4/questions/{content_id}/feeds')
-        self.sleep()
+        self.time_sleep()
         self.tab.get(f'https://www.zhihu.com/question/{content_id}')
         self.tab.scroll.to_bottom()
-        self.sleep()
+        self.time_sleep()
 
         for _ in range(5):
             r = self.tab.listen.wait(timeout=5)
@@ -160,10 +166,7 @@ class ZhihuSpider:
                     time_original = data['target']['created_time']
                     time_str = self.timestamp_to_str(time_original)
                     dic = {
-                        "排名": item['排名'],
-                        "标题": item['标题'],
-                        "内容": item['内容'],
-                        '热度': item['热度'],
+                        "content_id":content_id,
                         '用户': name,
                         "评论内容": content,
                         "点赞-收藏-评论": approve_save_comment,
@@ -174,19 +177,24 @@ class ZhihuSpider:
                 except Exception as e:
                     logger.warning(f"解析问答页面出错: {e}，标题为{item['标题']}")
                     continue
-                self.sleep()
+                self.time_sleep()
 
         return results
 
-    def save_to_db(self, item):
+    def save_static_to_db(self, item):
         #将单条数据写入数据库
         self.cursor.execute(
-            """insert into zhihu_hot_list(`rank`, title, main_content, hot, name, content, approve_save_comment, time)
-               values(%s, %s, %s, %s, %s, %s, %s, %s)""",
+            """insert ignore into zhihu_hot_list(`rank`, title, main_content, hot,content_id)
+               values(%s, %s, %s, %s, %s)""",
             (item['排名'], item['标题'], item['内容'], item['热度'],
-             item['用户'], item['评论内容'], item['点赞-收藏-评论'], item['发布时间'])
+             item['content_id'])
         )
-        self.sleep()
+        self.conn.commit()
+    def save_comment_to_data(self,answer):
+        self.cursor.execute("""insert ignore into zhihu_comment(content_id,name,content,approve_save_comment,time) values (%s,%s,%s,%s,%s)""",
+            (answer['content_id'], answer['用户'], answer['评论内容'], answer['点赞-收藏-评论'], answer['发布时间'])
+        )
+        self.time_sleep()
         self.conn.commit()
 
     def run(self):
@@ -194,9 +202,10 @@ class ZhihuSpider:
         hot_list = self.parse_static_page()
         for item in hot_list:
             try:
+                self.save_static_to_db(item)
                 answer_list = self.parse_answers(item)
                 for answer in answer_list:
-                    self.save_to_db(answer)
+                    self.save_comment_to_data(answer)
             except Exception as e:
                 logger.error(f"出错: {e}，标题为{item['标题']}")
                 continue
