@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>知乎热榜</title>
+
+    <!-- 加载 CSS 样式 -->
+    <!-- {% static 'style.css' %} 会被 Django 替换成 /static/style.css -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🔥 知乎热榜</h1>
+        <!-- 数据表格 -->
+        <table>
+            <thead>
+                <tr>
+                    <th>排名</th>
+                    <th>标题</th>
+                    <th>热度</th>
+                    <th>链接</th>
+                    <th>入库时间</th>
+                </tr>
+            </thead>
+            <tbody>
+                {# Django 模板语法注释：for遍历 / empty空列表处理 #}
+                {% for topic in topics %}
+                <tr>
+                    <td class="rank">
+                        <!-- 前3名高亮显示 forloop.counter 保证序号连续不重复 -->
+                        {% if forloop.counter == 1 %}
+                            <span class="badge badge-1">🥇 1</span>
+                        {% elif forloop.counter == 2 %}
+                            <span class="badge badge-2">🥈 2</span>
+                        {% elif forloop.counter == 3 %}
+                            <span class="badge badge-3">🥉 3</span>
+                        {% else %}
+                            <span class="badge">{{ forloop.counter }}</span>
+                        {% endif %}
+                    </td>
+                    <td class="title">{{ topic.title }}</td>
+                    <td class="hot">{{ topic.hot_value }} 万</td>
+                    <td>
+                        <a href="{{ topic.url }}" target="_blank" class="link">
+                            查看原文 →
+                        </a>
+                    </td>
+                    <td class="time">{{ topic.create_time|date:"Y-m-d H:i" }}</td>
+                </tr>
+                {% empty %}
+                <!-- 数据库里没有数据时显示 -->
+                <tr>
+                    <td colspan="5" style="text-align:center; padding:40px; color:#999;">
+                        暂无数据，请先运行爬虫或通过后台添加数据
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <!-- 底部信息 -->
+        <div class="footer">
+            共 {{ topics|length }} 条数据
+        </div>
+    </div>
+</body>
+</html>

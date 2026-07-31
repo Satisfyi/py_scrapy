@@ -1,0 +1,116 @@
+/* ============================================================
+   知乎热榜页面样式
+   这是一个简单的 CSS，只做基本的排版美化
+   ============================================================ */
+
+/* 整体页面 */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Microsoft YaHei", sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+
+/* 内容容器 */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;          /* 居中 */
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 30px;
+}
+
+/* 标题 */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* 表格 */
+table {
+    width: 100%;
+    border-collapse: collapse;   /* 去掉单元格间距 */
+}
+
+/* 表头 */
+thead th {
+    background-color: #f0f0f0;
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
+    color: #555;
+    border-bottom: 2px solid #ddd;
+}
+
+/* 表格行 */
+tbody td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #eee;
+}
+
+/* 鼠标悬停高亮 */
+tbody tr:hover {
+    background-color: #fafafa;
+}
+
+/* 排名列 */
+.rank {
+    width: 80px;
+    text-align: center;
+}
+
+/* 排名徽章 */
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+    background-color: #e0e0e0;
+    color: #666;
+}
+
+/* 前3名特殊颜色 */
+.badge-1 { background: #ff4d4f; color: white; font-weight: bold; }
+.badge-2 { background: #ff7a45; color: white; font-weight: bold; }
+.badge-3 { background: #ffa940; color: white; font-weight: bold; }
+
+/* 标题列 */
+.title {
+    font-size: 15px;
+    color: #333;
+}
+
+/* 热度列 */
+.hot {
+    width: 100px;
+    text-align: right;
+    color: #ff4d4f;
+    font-weight: 600;
+}
+
+/* 链接样式 */
+.link {
+    color: #1890ff;
+    text-decoration: none;
+}
+.link:hover {
+    text-decoration: underline;
+}
+
+/* 时间列 */
+.time {
+    width: 140px;
+    color: #999;
+    font-size: 13px;
+}
+
+/* 底部信息 */
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+}

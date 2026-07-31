@@ -1,0 +1,708 @@
+2026-07-26 09:57:57 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-26 09:57:57 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-26 09:57:57 [INFO] Scheduler started
+2026-07-26 09:57:57 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-26 09:57:57 [INFO] Watching for file changes with StatReloader
+2026-07-26 09:58:48 [INFO] D:\zhihu_project\zhihu_project\settings.py changed, reloading.
+2026-07-26 09:58:49 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-26 09:58:49 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-26 09:58:49 [INFO] Scheduler started
+2026-07-26 09:58:49 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-26 09:58:49 [INFO] Watching for file changes with StatReloader
+2026-07-26 09:59:24 [INFO] D:\zhihu_project\spider\scrapy_link_django.py changed, reloading.
+2026-07-26 09:59:25 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-26 09:59:25 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-26 09:59:25 [INFO] Scheduler started
+2026-07-26 09:59:25 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-26 09:59:25 [INFO] Watching for file changes with StatReloader
+2026-07-26 10:08:44 [INFO] D:\zhihu_project\spider\scrapy_link_django.py changed, reloading.
+2026-07-26 10:08:49 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-26 10:08:49 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-26 10:08:49 [INFO] Scheduler started
+2026-07-26 10:08:49 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-26 10:08:49 [INFO] Watching for file changes with StatReloader
+2026-07-26 10:09:57 [INFO] D:\zhihu_project\spider\scrapy_link_django.py changed, reloading.
+2026-07-26 10:09:58 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-26 10:09:58 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-26 10:09:58 [INFO] Scheduler started
+2026-07-26 10:09:58 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-26 10:09:58 [INFO] Watching for file changes with StatReloader
+2026-07-26 10:13:55 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-26 10:13:55 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-26 10:13:55 [INFO] Scheduler started
+2026-07-26 10:13:55 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-26 10:13:55 [INFO] Watching for file changes with StatReloader
+2026-07-26 10:39:47 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-26 10:39:47 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-26 10:39:47 [INFO] Scheduler started
+2026-07-26 10:39:47 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-26 10:39:47 [INFO] Watching for file changes with StatReloader
+2026-07-29 14:12:49 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-29 14:12:49 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-29 14:12:49 [INFO] Scheduler started
+2026-07-29 14:12:49 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-29 14:12:49 [INFO] Watching for file changes with StatReloader
+2026-07-30 13:09:21 [INFO] D:\zhihu_project\zhihu_project\settings.py changed, reloading.
+2026-07-30 13:09:24 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-30 13:09:24 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-30 13:09:24 [INFO] Scheduler started
+2026-07-30 13:09:24 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-30 13:09:24 [INFO] Watching for file changes with StatReloader
+2026-07-30 13:10:21 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-30 13:10:21 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-30 13:10:21 [INFO] Scheduler started
+2026-07-30 13:10:21 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-30 13:10:21 [INFO] Watching for file changes with StatReloader
+2026-07-30 14:20:01 [WARNING] Not Found: /static/admin/css/base.css
+2026-07-30 14:20:01 [WARNING] Not Found: /static/admin/css/dark_mode.css
+2026-07-30 14:20:01 [WARNING] Not Found: /static/admin/js/theme.js
+2026-07-30 14:20:01 [WARNING] Not Found: /static/admin/css/nav_sidebar.css
+2026-07-30 14:20:01 [WARNING] Not Found: /static/admin/css/responsive.css
+2026-07-30 14:20:01 [WARNING] Not Found: /static/admin/css/dashboard.css
+2026-07-30 14:20:01 [WARNING] Not Found: /static/admin/js/nav_sidebar.js
+2026-07-30 14:20:15 [WARNING] Not Found: /static/style.css
+2026-07-30 14:20:21 [WARNING] Not Found: /static/style.css
+2026-07-30 16:05:57 [INFO] D:\zhihu_project\topics\models.py changed, reloading.
+2026-07-30 16:06:04 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-30 16:06:04 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-30 16:06:04 [INFO] Scheduler started
+2026-07-30 16:06:04 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-30 16:06:04 [INFO] Watching for file changes with StatReloader
+2026-07-30 16:18:08 [INFO] D:\zhihu_project\topics\models.py changed, reloading.
+2026-07-30 16:18:10 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-30 16:18:10 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-30 16:18:10 [INFO] Scheduler started
+2026-07-30 16:18:10 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-30 16:18:10 [INFO] Watching for file changes with StatReloader
+2026-07-30 16:21:16 [INFO] D:\zhihu_project\topics\views.py changed, reloading.
+2026-07-30 16:21:19 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-30 16:21:19 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-30 16:21:19 [INFO] Scheduler started
+2026-07-30 16:21:19 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-30 16:21:19 [INFO] Watching for file changes with StatReloader
+2026-07-30 16:23:37 [INFO] D:\zhihu_project\topics\views.py changed, reloading.
+2026-07-30 16:23:39 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-30 16:23:39 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-30 16:23:39 [INFO] Scheduler started
+2026-07-30 16:23:39 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-30 16:23:39 [INFO] Watching for file changes with StatReloader
+2026-07-30 16:23:47 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-30 16:23:47 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-30 16:23:47 [INFO] Scheduler started
+2026-07-30 16:23:47 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-30 16:23:47 [INFO] Watching for file changes with StatReloader
+2026-07-30 16:23:52 [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\dj_pro\myvenv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\zhihu_project\topics\views.py", line 27, in index
+    topic_list=TopicHistory.objects.filter(
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\query.py", line 1495, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\query.py", line 1513, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\query.py", line 1523, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\query.py", line 1648, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\query.py", line 1680, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\query.py", line 1528, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\query.py", line 1335, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\query.py", line 1813, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'crawl_time_data' into field. Choices are: create_time, hot_value, id, rank, topic, topic_id
+2026-07-30 16:25:57 [INFO] D:\zhihu_project\topics\views.py changed, reloading.
+2026-07-30 16:25:59 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-30 16:25:59 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-30 16:25:59 [INFO] Scheduler started
+2026-07-30 16:25:59 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-30 16:25:59 [INFO] Watching for file changes with StatReloader
+2026-07-30 16:27:38 [INFO] D:\zhihu_project\topics\views.py changed, reloading.
+2026-07-30 16:27:41 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-30 16:27:41 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-30 16:27:41 [INFO] Scheduler started
+2026-07-30 16:27:41 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-30 16:27:41 [INFO] Watching for file changes with StatReloader
+2026-07-30 16:31:20 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-30 16:31:20 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-30 16:31:20 [INFO] Scheduler started
+2026-07-30 16:31:20 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-30 16:31:20 [INFO] Watching for file changes with StatReloader
+2026-07-30 16:31:39 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-30 16:31:39 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-30 16:31:39 [INFO] Scheduler started
+2026-07-30 16:31:39 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-30 16:31:39 [INFO] Watching for file changes with StatReloader
+2026-07-30 16:31:42 [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\dj_pro\myvenv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\zhihu_project\topics\views.py", line 27, in index
+    topic_list=TopicHistory.objects.filter(
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\query.py", line 1495, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\query.py", line 1513, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\query.py", line 1523, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\query.py", line 1648, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\query.py", line 1680, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\query.py", line 1528, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\query.py", line 1335, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\query.py", line 1813, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'crawl_time' into field. Choices are: create_time, hot_value, id, rank, topic, topic_id
+2026-07-30 16:31:44 [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\dj_pro\myvenv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\zhihu_project\topics\views.py", line 27, in index
+    topic_list=TopicHistory.objects.filter(
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\query.py", line 1495, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\query.py", line 1513, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\query.py", line 1523, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\query.py", line 1648, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\query.py", line 1680, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\query.py", line 1528, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\query.py", line 1335, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\query.py", line 1813, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'crawl_time' into field. Choices are: create_time, hot_value, id, rank, topic, topic_id
+2026-07-30 16:33:44 [INFO] D:\zhihu_project\topics\views.py changed, reloading.
+2026-07-30 16:33:46 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-30 16:33:46 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-30 16:33:46 [INFO] Scheduler started
+2026-07-30 16:33:46 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-30 16:33:46 [INFO] Watching for file changes with StatReloader
+2026-07-30 16:34:42 [INFO] D:\zhihu_project\topics\views.py changed, reloading.
+2026-07-30 16:34:44 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-30 16:34:44 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-30 16:34:44 [INFO] Scheduler started
+2026-07-30 16:34:44 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-30 16:34:44 [INFO] Watching for file changes with StatReloader
+2026-07-30 16:35:04 [INFO] D:\zhihu_project\topics\views.py changed, reloading.
+2026-07-30 16:35:06 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-30 16:35:06 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-30 16:35:06 [INFO] Scheduler started
+2026-07-30 16:35:06 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-30 16:35:06 [INFO] Watching for file changes with StatReloader
+2026-07-30 16:36:53 [INFO] D:\zhihu_project\topics\models.py changed, reloading.
+2026-07-30 16:36:55 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-30 16:36:55 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-30 16:36:55 [INFO] Scheduler started
+2026-07-30 16:36:55 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-30 16:36:55 [INFO] Watching for file changes with StatReloader
+2026-07-30 16:39:20 [INFO] D:\zhihu_project\topics\models.py changed, reloading.
+2026-07-30 16:39:23 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-30 16:39:23 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-30 16:39:23 [INFO] Scheduler started
+2026-07-30 16:39:23 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-30 16:39:23 [INFO] Watching for file changes with StatReloader
+2026-07-30 16:39:23 [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\dj_pro\myvenv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\zhihu_project\topics\views.py", line 27, in index
+    topic_list=TopicHistory.objects.filter(
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\query.py", line 1495, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\query.py", line 1513, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\query.py", line 1523, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\query.py", line 1648, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\query.py", line 1680, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\query.py", line 1590, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\query.py", line 1411, in build_lookup
+    lhs = self.try_transform(lhs, lookup_name)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\query.py", line 1460, in try_transform
+    raise FieldError(
+django.core.exceptions.FieldError: Unsupported lookup 'data' for DateTimeField or join on the field not permitted, perhaps you meant date?
+2026-07-30 16:40:50 [INFO] D:\zhihu_project\topics\models.py changed, reloading.
+2026-07-30 16:40:52 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-30 16:40:52 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-30 16:40:52 [INFO] Scheduler started
+2026-07-30 16:40:52 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-30 16:40:52 [INFO] Watching for file changes with StatReloader
+2026-07-30 16:53:32 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-30 16:53:32 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-30 16:53:32 [INFO] Scheduler started
+2026-07-30 16:53:32 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-30 16:53:32 [INFO] Watching for file changes with StatReloader
+2026-07-30 16:53:42 [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\dj_pro\myvenv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\zhihu_project\topics\views.py", line 27, in index
+    topic_list=Topic.objects.filter(
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\query.py", line 1495, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\query.py", line 1513, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\query.py", line 1523, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\query.py", line 1648, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\query.py", line 1680, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\query.py", line 1590, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\query.py", line 1411, in build_lookup
+    lhs = self.try_transform(lhs, lookup_name)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\query.py", line 1460, in try_transform
+    raise FieldError(
+django.core.exceptions.FieldError: Unsupported lookup 'data' for DateTimeField or join on the field not permitted, perhaps you meant date?
+2026-07-30 16:53:51 [WARNING] Not Found: /static/admin/css/base.css
+2026-07-30 16:53:51 [WARNING] Not Found: /static/admin/css/dark_mode.css
+2026-07-30 16:53:51 [WARNING] Not Found: /static/admin/css/nav_sidebar.css
+2026-07-30 16:53:51 [WARNING] Not Found: /static/admin/js/theme.js
+2026-07-30 16:53:51 [WARNING] Not Found: /static/admin/css/dashboard.css
+2026-07-30 16:53:51 [WARNING] Not Found: /static/admin/js/nav_sidebar.js
+2026-07-30 16:53:51 [WARNING] Not Found: /static/admin/css/responsive.css
+2026-07-30 16:53:55 [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\dj_pro\myvenv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\zhihu_project\topics\views.py", line 27, in index
+    topic_list=Topic.objects.filter(
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\query.py", line 1495, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\query.py", line 1513, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\query.py", line 1523, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\query.py", line 1648, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\query.py", line 1680, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\query.py", line 1590, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\query.py", line 1411, in build_lookup
+    lhs = self.try_transform(lhs, lookup_name)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\query.py", line 1460, in try_transform
+    raise FieldError(
+django.core.exceptions.FieldError: Unsupported lookup 'data' for DateTimeField or join on the field not permitted, perhaps you meant date?
+2026-07-30 16:55:38 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-30 16:55:38 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-30 16:55:38 [INFO] Scheduler started
+2026-07-30 16:55:38 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-30 16:55:38 [INFO] Watching for file changes with StatReloader
+2026-07-30 16:55:41 [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+  File "D:\dj_pro\myvenv\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "D:\dj_pro\myvenv\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "D:\dj_pro\myvenv\lib\site-packages\MySQLdb\connections.py", line 286, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'zhihu.zhihu_hot_list' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\dj_pro\myvenv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\zhihu_project\topics\views.py", line 34, in index
+    return render(request, 'index.html', {
+  File "D:\dj_pro\myvenv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\template\base.py", line 172, in render
+    return self._render(context)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\template\base.py", line 164, in _render
+    return self.nodelist.render(context)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\template\base.py", line 1018, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\dj_pro\myvenv\lib\site-packages\django\template\base.py", line 1018, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\dj_pro\myvenv\lib\site-packages\django\template\base.py", line 979, in render_annotated
+    return self.render(context)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\query.py", line 368, in __len__
+    self._fetch_all()
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\query.py", line 1954, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\query.py", line 93, in __iter__
+    results = compiler.execute_sql(
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+  File "D:\dj_pro\myvenv\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "D:\dj_pro\myvenv\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "D:\dj_pro\myvenv\lib\site-packages\MySQLdb\connections.py", line 286, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'zhihu.zhihu_hot_list' doesn't exist")
+2026-07-30 16:55:42 [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+  File "D:\dj_pro\myvenv\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "D:\dj_pro\myvenv\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "D:\dj_pro\myvenv\lib\site-packages\MySQLdb\connections.py", line 286, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'zhihu.zhihu_hot_list' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\dj_pro\myvenv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\zhihu_project\topics\views.py", line 34, in index
+    return render(request, 'index.html', {
+  File "D:\dj_pro\myvenv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\template\base.py", line 172, in render
+    return self._render(context)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\template\base.py", line 164, in _render
+    return self.nodelist.render(context)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\template\base.py", line 1018, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\dj_pro\myvenv\lib\site-packages\django\template\base.py", line 1018, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\dj_pro\myvenv\lib\site-packages\django\template\base.py", line 979, in render_annotated
+    return self.render(context)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\query.py", line 368, in __len__
+    self._fetch_all()
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\query.py", line 1954, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\query.py", line 93, in __iter__
+    results = compiler.execute_sql(
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+  File "D:\dj_pro\myvenv\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "D:\dj_pro\myvenv\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "D:\dj_pro\myvenv\lib\site-packages\MySQLdb\connections.py", line 286, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'zhihu.zhihu_hot_list' doesn't exist")
+2026-07-30 16:55:43 [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+  File "D:\dj_pro\myvenv\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "D:\dj_pro\myvenv\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "D:\dj_pro\myvenv\lib\site-packages\MySQLdb\connections.py", line 286, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'zhihu.zhihu_hot_list' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\dj_pro\myvenv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\zhihu_project\topics\views.py", line 34, in index
+    return render(request, 'index.html', {
+  File "D:\dj_pro\myvenv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\template\base.py", line 172, in render
+    return self._render(context)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\template\base.py", line 164, in _render
+    return self.nodelist.render(context)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\template\base.py", line 1018, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\dj_pro\myvenv\lib\site-packages\django\template\base.py", line 1018, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\dj_pro\myvenv\lib\site-packages\django\template\base.py", line 979, in render_annotated
+    return self.render(context)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\query.py", line 368, in __len__
+    self._fetch_all()
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\query.py", line 1954, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\query.py", line 93, in __iter__
+    results = compiler.execute_sql(
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+  File "D:\dj_pro\myvenv\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "D:\dj_pro\myvenv\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "D:\dj_pro\myvenv\lib\site-packages\MySQLdb\connections.py", line 286, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'zhihu.zhihu_hot_list' doesn't exist")
+2026-07-30 16:55:43 [ERROR] Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+  File "D:\dj_pro\myvenv\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "D:\dj_pro\myvenv\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "D:\dj_pro\myvenv\lib\site-packages\MySQLdb\connections.py", line 286, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'zhihu.zhihu_hot_list' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\dj_pro\myvenv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\zhihu_project\topics\views.py", line 34, in index
+    return render(request, 'index.html', {
+  File "D:\dj_pro\myvenv\lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\template\base.py", line 172, in render
+    return self._render(context)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\template\base.py", line 164, in _render
+    return self.nodelist.render(context)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\template\base.py", line 1018, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\dj_pro\myvenv\lib\site-packages\django\template\base.py", line 1018, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "D:\dj_pro\myvenv\lib\site-packages\django\template\base.py", line 979, in render_annotated
+    return self.render(context)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\query.py", line 368, in __len__
+    self._fetch_all()
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\query.py", line 1954, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\query.py", line 93, in __iter__
+    results = compiler.execute_sql(
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\dj_pro\myvenv\lib\site-packages\django\db\backends\mysql\base.py", line 76, in execute
+    return self.cursor.execute(query, args)
+  File "D:\dj_pro\myvenv\lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+  File "D:\dj_pro\myvenv\lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "D:\dj_pro\myvenv\lib\site-packages\MySQLdb\connections.py", line 286, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'zhihu.zhihu_hot_list' doesn't exist")
+2026-07-30 16:59:40 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-30 16:59:40 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-30 16:59:40 [INFO] Scheduler started
+2026-07-30 16:59:40 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-30 16:59:40 [INFO] Watching for file changes with StatReloader
+2026-07-30 16:59:45 [WARNING] Not Found: /static/style.css
+2026-07-30 16:59:47 [WARNING] Not Found: /static/style.css
+2026-07-30 17:10:19 [INFO] D:\zhihu_project\topics\models.py changed, reloading.
+2026-07-30 17:13:44 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-30 17:13:44 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-30 17:13:44 [INFO] Scheduler started
+2026-07-30 17:13:44 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-30 17:13:44 [INFO] Watching for file changes with StatReloader
+2026-07-30 17:18:28 [INFO] D:\zhihu_project\topics\models.py changed, reloading.
+2026-07-30 17:18:30 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-30 17:18:30 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-30 17:18:30 [INFO] Scheduler started
+2026-07-30 17:18:30 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-30 17:18:30 [INFO] Watching for file changes with StatReloader
+2026-07-30 17:19:23 [WARNING] Not Found: /static/style.css
+2026-07-30 17:20:25 [WARNING] Not Found: /static/style.css
+2026-07-30 17:20:27 [WARNING] Not Found: /static/style.css
+2026-07-30 17:21:21 [WARNING] Not Found: /static/style.css
+2026-07-30 17:21:29 [WARNING] Not Found: /static/admin/css/dark_mode.css
+2026-07-30 17:21:29 [WARNING] Not Found: /static/admin/css/base.css
+2026-07-30 17:21:29 [WARNING] Not Found: /static/admin/js/theme.js
+2026-07-30 17:21:29 [WARNING] Not Found: /static/admin/css/nav_sidebar.css
+2026-07-30 17:21:29 [WARNING] Not Found: /static/admin/css/dashboard.css
+2026-07-30 17:21:29 [WARNING] Not Found: /static/admin/css/nav_sidebar.css
+2026-07-30 17:21:29 [WARNING] Not Found: /static/admin/css/responsive.css
+2026-07-30 17:21:29 [WARNING] Not Found: /static/admin/js/nav_sidebar.js
+2026-07-30 17:21:34 [WARNING] Not Found: /static/style.css
+2026-07-30 17:21:34 [WARNING] Not Found: /static/style.css
+2026-07-30 17:21:36 [WARNING] Not Found: /static/style.css
+2026-07-30 17:22:10 [WARNING] Not Found: /static/style.css
+2026-07-30 17:22:12 [WARNING] Not Found: /static/style.css
+2026-07-30 17:23:58 [WARNING] Not Found: /static/style.css
+2026-07-30 17:25:30 [WARNING] Not Found: /static/style.css
+2026-07-30 17:25:47 [INFO] D:\zhihu_project\topics\models.py changed, reloading.
+2026-07-30 17:25:50 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-30 17:25:50 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-30 17:25:50 [INFO] Scheduler started
+2026-07-30 17:25:50 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-30 17:25:50 [INFO] Watching for file changes with StatReloader
+2026-07-30 17:30:55 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-30 17:30:55 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-30 17:30:55 [INFO] Scheduler started
+2026-07-30 17:30:55 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-30 17:30:55 [INFO] Watching for file changes with StatReloader
+2026-07-30 17:33:26 [INFO] D:\zhihu_project\topics\scheduler.py changed, reloading.
+2026-07-30 17:33:29 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-30 17:33:29 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-30 17:33:29 [INFO] Scheduler started
+2026-07-30 17:33:29 [INFO] 定时调度器已启动，每天 09:00 执行爬取
+2026-07-30 17:33:29 [INFO] Watching for file changes with StatReloader
+2026-07-31 10:11:34 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-31 10:11:34 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-31 10:11:34 [INFO] Scheduler started
+2026-07-31 10:11:34 [INFO] 定时调度器已启动，每天 17:00 执行爬取
+2026-07-31 10:11:34 [INFO] Watching for file changes with StatReloader
+2026-07-31 10:14:54 [INFO] D:\zhihu_project\topics\views.py changed, reloading.
+2026-07-31 10:14:57 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-31 10:14:57 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-31 10:14:57 [INFO] Scheduler started
+2026-07-31 10:14:57 [INFO] 定时调度器已启动，每天 17:00 执行爬取
+2026-07-31 10:14:57 [INFO] Watching for file changes with StatReloader
+2026-07-31 10:16:20 [INFO] D:\zhihu_project\topics\views.py changed, reloading.
+2026-07-31 10:16:23 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-31 10:16:23 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-31 10:16:23 [INFO] Scheduler started
+2026-07-31 10:16:23 [INFO] 定时调度器已启动，每天 17:00 执行爬取
+2026-07-31 10:16:23 [INFO] Watching for file changes with StatReloader
+2026-07-31 10:18:34 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-31 10:18:34 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-31 10:18:34 [INFO] Scheduler started
+2026-07-31 10:18:34 [INFO] 定时调度器已启动，每天 17:00 执行爬取
+2026-07-31 10:18:34 [INFO] Watching for file changes with StatReloader
+2026-07-31 10:28:02 [INFO] D:\zhihu_project\topics\views.py changed, reloading.
+2026-07-31 10:28:05 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-31 10:28:05 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-31 10:28:05 [INFO] Scheduler started
+2026-07-31 10:28:05 [INFO] 定时调度器已启动，每天 17:00 执行爬取
+2026-07-31 10:28:05 [INFO] Watching for file changes with StatReloader
+2026-07-31 10:28:25 [INFO] D:\zhihu_project\topics\views.py changed, reloading.
+2026-07-31 10:28:28 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-31 10:28:28 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-31 10:28:28 [INFO] Scheduler started
+2026-07-31 10:28:28 [INFO] 定时调度器已启动，每天 17:00 执行爬取
+2026-07-31 10:28:28 [INFO] Watching for file changes with StatReloader
+2026-07-31 10:28:40 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-31 10:28:40 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-31 10:28:40 [INFO] Scheduler started
+2026-07-31 10:28:40 [INFO] 定时调度器已启动，每天 17:00 执行爬取
+2026-07-31 10:28:40 [INFO] Watching for file changes with StatReloader
+2026-07-31 10:41:46 [INFO] D:\zhihu_project\topics\scheduler.py changed, reloading.
+2026-07-31 10:41:49 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-31 10:41:49 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-31 10:41:49 [INFO] Scheduler started
+2026-07-31 10:41:49 [INFO] 定时调度器已启动，每天 17:00 执行爬取
+2026-07-31 10:41:49 [INFO] Watching for file changes with StatReloader
+2026-07-31 10:45:29 [INFO] D:\zhihu_project\topics\models.py changed, reloading.
+2026-07-31 10:45:32 [INFO] Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2026-07-31 10:45:32 [INFO] Added job "每日知乎热榜爬取" to job store "default"
+2026-07-31 10:45:32 [INFO] Scheduler started
+2026-07-31 10:45:32 [INFO] 定时调度器已启动，每天 17:00 执行爬取
+2026-07-31 10:45:32 [INFO] Watching for file changes with StatReloader
